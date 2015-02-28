@@ -55,13 +55,20 @@ set :unicorn_user, 'pokeme'
 namespace :deploy do
 
   desc 'Restart application'
+  
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
+      invoke 'unicorn:restart'
     end
   end
 
+  task :finalize_update do
+    on roles(:app), in: :sequence do
+      execute <<-CMD
+        cp #{release_path}/config/environments/#{fetch :rails_env}/database.yml #{release_path}/config/database.yml
+      CMD
+    end
+  end
   after :publishing, :restart
 
   after :restart, :clear_cache do

@@ -21,3 +21,7 @@ group :development , :test do
   gem 'capistrano3-unicorn'
   gem 'capistrano-ext'
 end
+
+group :deployment, :stage do
+  gem 'unicorn', :platforms => :ruby
+end

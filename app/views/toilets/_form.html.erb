@@ -1,0 +1,153 @@
+<%= form_for(@toilet) do |f| %>
+  <% if @toilet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@toilet.errors.count, "error") %> prohibited this toilet from being saved:</h2>
+
+      <ul>
+      <% @toilet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.text_field :time %>
+  </div>
+  <div class="field">
+    <%= f.label :car_normal %><br>
+    <%= f.number_field :car_normal %>
+  </div>
+  <div class="field">
+    <%= f.label :car_challenge %><br>
+    <%= f.number_field :car_challenge %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :man_wa %><br>
+    <%= f.number_field :man_wa %>
+  </div>
+  <div class="field">
+    <%= f.label :man_you %><br>
+    <%= f.number_field :man_you %>
+  </div>
+  <div class="field">
+    <%= f.label :man_sho %><br>
+    <%= f.number_field :man_sho %>
+  </div>
+  <div class="field">
+    <%= f.label :woman_wa %><br>
+    <%= f.number_field :woman_wa %>
+  </div>
+  <div class="field">
+    <%= f.label :woman_you %><br>
+    <%= f.number_field :woman_you %>
+  </div>
+  <div class="field">
+    <%= f.label :all_wa %><br>
+    <%= f.number_field :all_wa %>
+  </div>
+  <div class="field">
+    <%= f.label :all_you %><br>
+    <%= f.number_field :all_you %>
+  </div>
+  <div class="field">
+    <%= f.label :child_dai %><br>
+    <%= f.number_field :child_dai %>
+  </div>
+  <div class="field">
+    <%= f.label :child_sho %><br>
+    <%= f.number_field :child_sho %>
+  </div>
+  <div class="field">
+    <%= f.label :wash %><br>
+    <%= f.number_field :wash %>
+  </div>
+  <div class="field">
+    <%= f.label :tesuri %><br>
+    <%= f.check_box :tesuri %>
+  </div>
+  <div class="field">
+    <%= f.label :emergency %><br>
+    <%= f.check_box :emergency %>
+  </div>
+  <div class="field">
+    <%= f.label :door %><br>
+    <%= f.text_field :door %>
+  </div>
+  <div class="field">
+    <%= f.label :space %><br>
+    <%= f.text_field :space %>
+  </div>
+  <div class="field">
+    <%= f.label :direction %><br>
+    <%= f.text_field :direction %>
+  </div>
+  <div class="field">
+    <%= f.label :wash_flag %><br>
+    <%= f.check_box :wash_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :care_flag %><br>
+    <%= f.check_box :care_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :ostomate_flag %><br>
+    <%= f.check_box :ostomate_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :tap %><br>
+    <%= f.text_field :tap %>
+  </div>
+  <div class="field">
+    <%= f.label :dry_flag %><br>
+    <%= f.check_box :dry_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :rest_flag %><br>
+    <%= f.check_box :rest_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :baggage_flag %><br>
+    <%= f.check_box :baggage_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :hook_flag %><br>
+    <%= f.check_box :hook_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :infant_chair %><br>
+    <%= f.check_box :infant_chair %>
+  </div>
+  <div class="field">
+    <%= f.label :infant_bed %><br>
+    <%= f.check_box :infant_bed %>
+  </div>
+  <div class="field">
+    <%= f.label :sightseeing %><br>
+    <%= f.text_field :sightseeing %>
+  </div>
+  <div class="field">
+    <%= f.label :memo %><br>
+    <%= f.text_field :memo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

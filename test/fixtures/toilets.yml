@@ -1,0 +1,73 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  area: MyString
+  address: MyString
+  time: MyString
+  car_normal: 1
+  car_challenge: 1
+  type: 
+  man_wa: 1
+  man_you: 1
+  man_sho: 1
+  woman_wa: 1
+  woman_you: 1
+  all_wa: 1
+  all_you: 1
+  child_dai: 1
+  child_sho: 1
+  wash: 1
+  tesuri: false
+  emergency: false
+  door: MyString
+  space: MyString
+  direction: MyString
+  wash_flag: false
+  care_flag: false
+  ostomate_flag: false
+  tap: MyString
+  dry_flag: false
+  rest_flag: false
+  baggage_flag: false
+  hook_flag: false
+  infant_chair: false
+  infant_bed: false
+  sightseeing: MyString
+  memo: MyString
+
+two:
+  title: MyString
+  area: MyString
+  address: MyString
+  time: MyString
+  car_normal: 1
+  car_challenge: 1
+  type: 
+  man_wa: 1
+  man_you: 1
+  man_sho: 1
+  woman_wa: 1
+  woman_you: 1
+  all_wa: 1
+  all_you: 1
+  child_dai: 1
+  child_sho: 1
+  wash: 1
+  tesuri: false
+  emergency: false
+  door: MyString
+  space: MyString
+  direction: MyString
+  wash_flag: false
+  care_flag: false
+  ostomate_flag: false
+  tap: MyString
+  dry_flag: false
+  rest_flag: false
+  baggage_flag: false
+  hook_flag: false
+  infant_chair: false
+  infant_bed: false
+  sightseeing: MyString
+  memo: MyString

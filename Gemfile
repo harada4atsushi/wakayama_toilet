@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'gmaps4rails'
 gem 'geocoder'
+gem 'grape'
 
 group :development , :test do
   gem 'capistrano', '~> 3.2.1'
